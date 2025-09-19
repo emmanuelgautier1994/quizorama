@@ -1,0 +1,35 @@
+.face-to-face-container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 6fr 1.5fr;
+  grid-template-areas:
+    "title"
+    "timer"
+    "controls";
+}
+
+.title-container {
+  grid-area: title;
+  text-align: center;
+}
+
+.timer-container {
+  grid-area: timer;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+
+.controls-container {
+  grid-area: controls;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+}
+
+g {
+  transition: transform 0.125s ease-in-out;
+}

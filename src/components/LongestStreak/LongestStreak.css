@@ -1,0 +1,38 @@
+.four-in-a-round-container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 6fr 1.5fr;
+  grid-template-areas:
+    "title"
+    "scene"
+    "controls";
+}
+
+.title-container {
+  grid-area: title;
+  text-align: center;
+}
+
+.scene-container {
+  grid-area: scene;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+
+  g {
+    transition: transform 0.3s ease;
+    transform-box: fill-box;
+    transform-origin: center;
+
+    &.active {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.controls-container {
+  grid-area: controls;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

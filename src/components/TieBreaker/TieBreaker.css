@@ -1,0 +1,59 @@
+.four-in-a-round-knockout-container {
+  display: grid;
+  grid-template-rows: 1fr 6fr 1.5fr;
+  grid-template-areas:
+    "title"
+    "middle"
+    "controls";
+  height: 100vh;
+}
+
+.title-container {
+  grid-area: title;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  h1 {
+    font-size: 50px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  h2 {
+    font-size: 24px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+}
+
+.middle-container {
+  grid-area: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.players-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.player-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.controls-container {
+  grid-area: controls;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}

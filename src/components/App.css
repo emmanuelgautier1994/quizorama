@@ -1,0 +1,59 @@
+body {
+  background: linear-gradient(45deg, rgb(77, 32, 200), rgb(6, 8, 158));
+  font-family: Righteous, regular, sans-serif;
+  color: #f7fcff;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 50px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* div,
+svg,
+h1 {
+  border: 1px solid green;
+} */
+
+button {
+  padding: 10px 25px;
+  min-width: 120px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: Righteous, regular, sans-serif;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, color 0.1s ease, filter 0.1s ease,
+    transform 0.1s ease;
+  color: white;
+  cursor: pointer;
+
+  background: linear-gradient(#ca470aff, #ef8b07ff, #ca470aff);
+  border: 3px solid rgb(255, 160, 71);
+
+  &.green {
+    background: linear-gradient(#388e3c, #4caf50, #388e3c);
+    border: 3px solid #4caf50;
+  }
+
+  &.grey {
+    background: linear-gradient(#8b8b8b, #b7b7b7, #8b8b8b);
+    border: 3px solid #c0c0c0;
+  }
+
+  &:disabled {
+    background: linear-gradient(#343434, #626262, #343434);
+    border: 3px solid #777777;
+    color: #a8a8a8;
+    cursor: not-allowed;
+  }
+
+  &:hover:not(:disabled) {
+    filter: brightness(1.1);
+  }
+
+  &:active:not(:disabled) {
+    filter: brightness(0.9);
+    transform: scale(0.95);
+  }
+}

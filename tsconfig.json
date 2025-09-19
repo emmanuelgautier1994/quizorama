@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "jsx": "react-jsx",
+    "lib": ["dom", "es2016"],
+    "esModuleInterop": true
+  },
+  "include": ["src"]
+}

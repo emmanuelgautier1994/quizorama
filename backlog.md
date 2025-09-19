@@ -1,0 +1,6 @@
+- Face to Face
+  - Add icon credit: "Icon User by Kris.27 from <a href="https://thenounproject.com/browse/icons/term/user/" target="_blank" title="User Icons">Noun Project</a> (CC BY 3.0) => See https://help.thenounproject.com/hc/en-us/articles/200509948-Medium-Specific-Credit-Requirements-Examples
+  - Add keyboard controls
+  - Change boxes to hexagons?
+- Button to reset the entire game
+- Cooler splash screen
